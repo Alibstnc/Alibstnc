@@ -6,7 +6,7 @@ import datetime
 fake = Faker()
 
 class BMWDataGenerator:
-    def __init__(self, num_customers=1000):
+    def __init__(self, num_customers=50):
         self.num_customers = num_customers
         self.customers = []
         self.interactions = []
@@ -90,7 +90,7 @@ class BMWDataGenerator:
         return self.interactions_df
 
 if __name__ == "__main__":
-    generator = BMWDataGenerator(num_customers=500)
+    generator = BMWDataGenerator(num_customers=50)
     customers = generator.generate_customers()
     data = generator.generate_interactions(customers)
 
