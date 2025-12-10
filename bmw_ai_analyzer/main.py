@@ -8,7 +8,7 @@ def main():
 
     # Step 1: Generate Data
     print("\n--- Step 1: Generating Synthetic Data ---")
-    generator = BMWDataGenerator(num_customers=1000)
+    generator = BMWDataGenerator(num_customers=50)
     customers = generator.generate_customers()
     data = generator.generate_interactions(customers)
     data.to_csv('bmw_customer_data.csv', index=False)
